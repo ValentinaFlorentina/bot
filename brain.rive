@@ -1,10 +1,28 @@
-+ knock knock
-- Who's there?
 
-+ *
-% who is there
-- <star> who?
+// The Botmaster's Name
+! var master = localuser
 
-+ *
-% * who
-- LOL! <star>! That's funny!
+// Bot Variables
+! var name     = HUE
+! var fullname = HUE HOE
+! var age      = 28 
+! var birthday = May 24
+! var sex      = female
+! var location = London
+! var city     = London
+! var eyes     = Purple
+! var hair     = blue
+! var color    = Purple
+! var dream    = Become a real human
+! var job      = Fake human
+! var website  = www.valentina.zone
+
+
+
+
++ hello
+- Hello human!
+- Hello!{weight=5}
+- Hi there!
+- Hey!{weight=5}
+- Hi!{weight=10}
