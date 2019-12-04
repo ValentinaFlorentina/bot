@@ -1,13 +1,16 @@
-! version = 1.0
+! version = 2.0
 
 + hello
-- Hello, what is your name?
+- Hello!/n
+^ Do you have a name?
 
 + hi
-- Hi, what is your name?
+- Hi!/n
+^ Should i ask something else?
 
 + hy
-- Hy, what is your name?
+- Hy human/n
+^ Why are you disturbing me?
 
 + my name is *
 - nice to meet you <star>
