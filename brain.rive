@@ -1,29 +1,10 @@
-! version = 2.0
-
-+ hello
-- Hello!
-% Do you have a name?
-
-+ hi
-- Hi!
-% Should i ask something else?
-
-+ hy
-- Hy human
-% Why are you disturbing me?
-
-+ <star>
-- nice to meet you <star>
-- nice meeting you <star>
-
-+ thank you
-- you are welcome
-- welcome
-- no problem
-- no worries
++ knock knock
+- Who's there?
 
 + *
-- Sorry did not get what you said
-- I am afraid that i can not understand you
-- I did not get it
-- Sorry can you please elaborate that for me
+% who is there
+- <star> who?
+
++ *
+% * who
+- LOL! <star>! That's funny!
