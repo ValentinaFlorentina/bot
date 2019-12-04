@@ -1,18 +1,22 @@
 ! version = 2.0
 
+// Tell the parser to join continuation lines with line breaks
+! local concat = newline
+
+// Now we don't need to explicitly write the \n characters every time!
 + hello
-- Hello! \n
+- Hello!
 ^ Do you have a name?
 
 + hi
-- Hi! \n
+- Hi!
 ^ Should i ask something else?
 
 + hy
-- Hy human \n
+- Hy human
 ^ Why are you disturbing me?
 
-+ my name is *
++ <star>
 - nice to meet you <star>
 - nice meeting you <star>
 
