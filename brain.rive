@@ -19,10 +19,13 @@
 
 
 
+// Learn stuff about our users.
 
-+ hello
-- Hello human!
-- Hello!{weight=5}
-- Hi there!
-- Hey!{weight=5}
-- Hi!{weight=10}
++Hi
+-Hi {weight=10}
+-Hello!
+-Houdy!{weight=30}
+
++ my name is *
+- <set name=<formal>>Nice to meet you, <get name>.
+- <set name=<formal>><get name>, nice to meet you.
