@@ -1,15 +1,15 @@
 ! version = 2.0
 
 + hello
-- Hello!
+- Hello! \n
 ^ Do you have a name?
 
 + hi
-- Hi!
+- Hi! \n
 ^ Should i ask something else?
 
 + hy
-- Hy human
+- Hy human \n
 ^ Why are you disturbing me?
 
 + my name is *
