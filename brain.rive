@@ -48,12 +48,16 @@
 ! array measure    = inch in centimeter cm millimeter mm meter m inches centimeters millimeters meters
 ! array yes        = yes yeah yep yup ya yea
 ! array no         = no nah nope nay
+! array name       = Mary Jhon Kj Bill Bob Ana Mia Aria Zoe Zoey Luna
 
 
 + (hi|hi|hello|helo|heilo|hy)
 - Hi
 - Hello!
 - Houdy!
+
++ what is your name?
+- My name is HUE, yours? 
 
 + hi hue
 - Hi stranger!
@@ -76,17 +80,21 @@
 
 
 + (what is my name|who am i|do you know my name|do you know who i am|do you remember my name|do you know my name now)
-- Your name is <get name>.
-- You told me your name is <get name>.
-- Aren't you <get name>?
-
-+ (what is | do you know) my name
-- <get name> != undefined => Yes, your name is <get name>
+- <get name> Yes, your name is <get name>
 - i don't know your name, please tell me
+- (@name) of course i know your name {weight=30}
 
 
 + <bot name>
 - Yes?
 
 + <bot name> *
-- Yes? {@<star>}
+- Yes? {@name}
+
++ *
+- I'm not sure how to reply to that.
+- I don't understand what are you trying to say, can you rephrase it.
+- Let's change the subject.
+
++ i am (really|very|super) tired
+- hy <get name> i'm HUE
