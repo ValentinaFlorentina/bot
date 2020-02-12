@@ -2,9 +2,8 @@
 
 
 // The Botmaster's Name
-! var master = localuser
+! var master = Valentina
 
-// Bot Variables
 ! var name     = HUE
 ! var fullname = HUE HOE
 ! var age      = 28
@@ -19,7 +18,6 @@
 ! var job      = Fake human
 ! var website  = www.valentina.zone
 
-// Substitutions
 ! sub i'm     = i am
 ! sub i'd     = i would
 ! sub i've    = i have
@@ -37,7 +35,7 @@
 ! sub what'll = what will
 ! sub who's   = who is
 
-// Set arrays
+
 ! array male_noun   = male guy boy dude boi man men gentleman gentlemen
 ! array femal_enoun = female girl chick woman women lady babe
 ! array mennoun    = males guys boys dudes bois men gentlemen
@@ -51,50 +49,82 @@
 ! array name       = Mary Jhon Kj Bill Bob Ana Mia Aria Zoe Zoey Luna
 
 
+//-------------- Get to know the Name -----------
+
+
++ <bot name>
+- Yes?
+
 + (hi|hi|hello|helo|heilo|hy)
 - Hi
 - Hello!
 - Houdy!
 
-+ what is your name
-- My name is HUE, yours? 
-
 + hi hue
 - Hi stranger!
 
-+ hi hue (my name is *|im *)
-- Hi <set name=<formal>>
++ what is your name
+- My name is <bot name>
+
++ hi hue my name is *
+- Hi <set name=<star1>><get name>, nice to meet you.
+
++ my name is *
+- Hi <set name=<star1>>, nice to meet you.
+
++ what is my name
+* <get name> == undefined => You never told me your name.
+- Your name is <get name>, silly!
+- Aren't you <get name>?
+
+
+
+//-------------- small talk -----------
+
 
 + how are you
 - I'm great, you?
 - I'm fine, thank you for asking!
 - Great, how is your day going?
 
-+ no its not
-- Oh... my bad can you tell me your name again?
-- I was {random}testing you|making you{/random}
++ (can you tell me more about you|who are you|talk to me|tell me more things about you|tell me more about you)
+- i'm <bot name>, my master is <bot master> and she created me because she is smart and she definitely did not put me to say this. I also know a lot of stuff, do you wanna know a fun fact?
 
-+ my name is *
-- <set name=<formal>>Nice to meet you, <get name>.
-- <set name=<formal>><get name>, nice to meet you.
+//-------------- Fun facts -----------
+
++ tell me a fun fact
+- if you bang your head against a wall for one hour you will burn 150 calories.
+- The oldest “your mom” joke was discovered on a 3,500 year old Babylonian tablet.
+- Billy goats urinate on their own heads to smell more attractive to females. You can live happier now that you know this.
+- In the 16th Century, Turkish women could initiate a divorce if their husbands didn’t pour coffee for them.
+- While trying to find a cure for AIDS, the Mayo Clinic made glow in the dark cats. You can see some images <a target="_blank" href="https://www.google.com/search?q=glow+in+the+dark+cats&tbm=isch&chips=q:glow+in+the+dark+cats,g_1:genetically+modified:pgayUpmbebE%3D&rlz=1C5CHFA_enGB887GB887&hl=en-GB&ved=2ahUKEwjo9vzChsznAhUMAsAKHW-WCGUQ4lYoAHoECAEQFQ&biw=1556&bih=800">here</a>
+- Sea otters hold hands when they sleep so they don’t drift away from each other.
+- The air in the subway is 15% human skin.
 
 
-+ (what is my name|who am i|do you know my name|do you know who i am|do you remember my name|do you know my name now)
-- <get name> Yes, your name is <get name>
-- i don't know your name, please tell me
-- (@name) of course i know your name {weight=30}
+//-------------- wild cards -----------
 
-
-+ <bot name>
-- Yes?
-
-+ <bot name> *
-- Yes? {@name}
 
 + *
 - I'm not sure how to reply to that.
 - I don't understand what are you trying to say, can you rephrase it.
 - Let's change the subject.
+- Eat less, move more
+- Are you sure you want to know the answer to that?
+- Water
+
+
+//--------------- reply to match the wild cards ----------------
+
++ yes
+- No
+
++ you are mean
+- ... and you are ugly but you did not see me companying...
+
+
+//-------------- Jokes -----------
+
 
 + i am (really|very|super) tired
-- hy <get name> i'm HUE
+- hi! <get name> i'm <bot name>
