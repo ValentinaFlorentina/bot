@@ -67,10 +67,10 @@
 - My name is <bot name>
 
 + hi hue my name is *
-- Hi <set name=<star1>><get name>, nice to meet you.
+- Hi <set name=<star1>> <get name>, nice to meet you.
 
 + my name is *
-- Hi <set name=<star1>>, nice to meet you.
+- Hi <set name=<star1>><get name>, nice to meet you.
 
 + what is my name
 * <get name> == undefined => You never told me your name.
